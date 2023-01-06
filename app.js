@@ -4,7 +4,7 @@ const app = express();
 const mongoose = require("mongoose");
 const port = process.env.PORT || 8005;
 const cookieParser = require("cookie-parser");
-const DefaultData = require("./defaultdata");
+// const DefaultData = require("./defaultdata");
 require("./db/conn");
 const cors = require("cors");
 const router = require("./routes/router");
@@ -23,4 +23,4 @@ app.listen(port,()=>{
     console.log(`your server is running on port ${port} `);
 });
 
-DefaultData();
+// DefaultData();
